@@ -1,10 +1,12 @@
-/** 
-
-Modified: 18 MAR 2012
-by      : Liza Sabater
-for     : FGA Project
-
+/*
+** 
+**  THEME       : FGA-Project
+**  CSS FILE    : Global.CSS
+**  MODIFIED BY : Liza Sabater
+**  MODIFIED ON : 11 APRIL 2011
+**
 */
+
 
 a:active,
 a:link, 
@@ -13,13 +15,15 @@ text-decoration:none;
 color: #444;
 }
 
+
 #region-branding {
 display: none;
 }
 
-h2 .pane-title{
 
+h2 .pane-title{
 }
+
 
 
 .left-column{
@@ -27,9 +31,11 @@ h2 .pane-title{
 }
 
 
-right-column{
+
+#right-column{
  padding: 0px;
 }
+
 
 
 #contact-link li a{
@@ -40,53 +46,280 @@ color: #F11086;
 }
 
 
+
 .panel-panel .unit li{
 list-style:none;
 word-spacing: 7px;
 font-weight: normal;
 }
 
+
+.breadcrumb{
+}
+
+
+
+/*
+**
+** SIDEBAR, LOGO, SITENAME, SLOGAN
+**
+*/
+
+
 #site-name{
 font-size:90px;
 letter-spacing: 1px;
 width: 50px;
 line-height:80%;
-margin: 20px 0;
+margin: 100px 0 20px 0;
 }
 
+#blog #site-name,
+#buzz #site-name{
+font-size:50px;
+letter-spacing: 1px;
+width: 50px;
+line-height:80%;
+margin: 10px 0 20px 0;
+}
+
+
 #site-slogan{
-margin: 40px 0 20px -30px;
+margin: 40px 0 50px -30px;
 font-size: 21px;
 border-top: 2px solid black;
 border-bottom: 2px solid black;
 padding: 10px 0px;
 }
 
-#home h2{
+
+/*
+**
+** HOME
+**
+*/
+
+#home h2, 
+#home2 h2{
 font-size:50px;
+margin: 50px 0 -10px 0;
 }
 
-#home p{
+
+#home p, 
+#home2 p{
 font-size: 26px;
 }
 
-#home dt{
-font-size: 26px;
+
+#home .pullquote{
+text-align: right;
+padding: 50px 30px 50px 100px; 
+margin: 50px 0;
+background: #EEE;
+}
+
+#home .pullquoted{
+margin: 0; 
+}
+
+#home dl, 
+#home2 dl{
+width: 700px;
+}
+
+
+#home dt, 
+#home2 dt{
+font-size: 24px;
 word-spacing:7px;
 }
 
  
-#home dd{
-font-size: 26px;
-width: 300px;
+
+#home dd, 
+#home2 dd{
+font-size: 20px;
+width: 250px;
 }
 
 
-#sidebar-menu{
+#front #sidebar-menu,
+#front2 #sidebar-menu{
 font-size: 15px;
 }
 
 #column-right{
-float:right;
-margin: 0 100px 0 0;
+float: right;
+margin: 0 -30px 0 20px;
+}
+
+/*
+**
+** FRONT
+** 
+*/
+
+#home .pane-content{
+width: 800px;
+margin: 0px 0 0 75px;
+}
+
+
+
+/* INTRO IMAGE */
+
+#home img {
+margin: 50px 0 30px 0;
+border:1px solid #eee;
+padding: 30px 50px;
+}
+
+
+
+/*
+**
+** FRONT2
+** 
+*/
+
+
+/* Breadcrumb */
+
+.page-front-2 .breadcrumb {
+display: none;
+}
+
+
+/* INTRO IMAGE */
+
+#home2 img {
+margin: 30px 0 ;
+}
+
+
+/*
+**
+** FOOTER 
+**
+*/
+
+#footer-info{
+margin: 75px 50px 0 50px;
+}
+
+
+/*
+**
+** BUZZ PAGES
+**
+*/
+
+#buzz .sidebar{
+}
+
+#buzz .field-label,
+#buzz .field-items{
+font-size: 16px;
+}
+
+.buzz-title{
+font-size: 30px;
+width: 350px;
+line-height: 90%;
+}
+
+.buzz-pullquote{
+font-size: 18px;
+background: #EEE;
+padding: 20px;
+margin: 30px 0;
+width: 350px;
+}
+
+.buzz-link a{
+color: #4A0;
+font-weight: bold;
+margin: 0px 0px 10px 0;
+}
+
+.field-name-field-buzz-link{
+width: 350px;
+}
+
+#buzz .buzz-source{
+margin: 30px 0px 0px 0;
+}
+
+
+.pane-node-field-buzz-author, 
+.pane-node-field-buzz-source{
+margin: 30px 0px 0px 0;
+
+}
+
+
+.buzz-author{
+margin: 0px 0 0 0px;
+}
+
+#buzz .center{
+margin: 0 0 0 170px;
+}
+
+#buzz img {
+margin: 0 0 0 0px;
+}
+
+.buzz-body{
+font-size: 24px;
+margin: 0 0 0 0px;
+}
+
+
+/*
+**
+** BLOG
+**
+*/
+
+#blog .center{
+font-size: 24px;
+}
+
+#blog .sidebar{
+font-size: 18px;
+}
+
+#blog .pane-comment-recent li{
+margin:0;
+line-height: 90%;
+margin: 0 0 20px 0;
+}
+
+#blog .pane-comment-recent a{
+font-weight: bold;
+color: #4A0;
+}
+
+#blog .pane-comment-recent span{
+font-size:12px;
+font-weight: normal;
+display: block;
+}
+
+#blog .links{
+list-style: none;
+margin: 0 0 30px 10px;
+}
+
+
+#blog .pane-title{
+margin: 0;
+}
+
+#blog .buzz-title{
+font-size: 40px;
+width: 350px;
+line-height: 90%;
 }
